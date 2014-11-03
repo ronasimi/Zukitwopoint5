@@ -26,9 +26,13 @@
 	-GtkDialog-button-spacing: 4;
 	-GtkDialog-action-area-border: 0;
 	-GtkStatusbar-shadow-type: none;
+}
+
+/* Maybe better to have this as a focus since the removal of the adwaita engine */
+*:focus {
 	outline-color: alpha(@theme_text_color, 0.3);
 	outline-style: dashed;
-	outline-offset: -3px; /* 2px */
+	outline-offset: -3px;
 	outline-width: 1px;
 	outline-radius: 2px;
 }
@@ -239,7 +243,7 @@ GtkTreeView.separator,
  ****************/
 .entry {
 	border-style: solid;
-	padding: 5px 4px 6px; /*4px;*/
+	padding: 5px 4px 6px;
 
 	/* border-image defined in the -assets variants */
 
@@ -860,12 +864,12 @@ GtkScrolledWindow GtkViewport.frame {
 .button.menuitem.menubar,
 GtkColorButton.button,
 GtkComboBox.combobox-entry .button {
-	padding: 4px;
+	padding: 5px;
 }
 
 .button.image-button,
 .primary-toolbar.toolbar .button.image-button {
-	padding: 4px;
+	padding: 5px;
 }
 
 .button {
@@ -873,6 +877,7 @@ GtkComboBox.combobox-entry .button {
 	-GtkButton-interior-focus: true;
 	-GtkButton-default-border: 0;
 	-GtkButton-inner-border: 3;
+	-GtkArrow-arrow-scaling: 0.5;
 
 	border-style: solid;
 	border-color: transparent;
@@ -2273,7 +2278,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 }
 
 .toolbar .button.text-button {
-	padding: 2px 16px;
+	padding: 4px 8px;
 }
 
 .toolbar .button.image-button {
@@ -2313,7 +2318,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 }
 
 .header-bar .button.text-button {
-	padding: 2px 16px;
+	padding: 4px 8px;
 }
 
 .header-bar .button.image-button {
@@ -2349,7 +2354,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 }
 
 .action-bar .button.text-button {
-	padding: 2px 16px;
+	padding: 4px 8px;
 }
 
 .action-bar .button.image-button {
